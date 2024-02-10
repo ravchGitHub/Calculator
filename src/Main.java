@@ -74,6 +74,8 @@ public class Main {
             }
 
             calc(expression);
+        } catch (NumberFormatException e) {
+            throw new RuntimeException("The expression was entered incorrectly.");
         }
     }
 
